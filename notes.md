@@ -5,3 +5,4 @@ What is TS + Why ?
 4. Types: array(number[], string[], (number|string)[]).
 5. Array as generic type: Array<number|string>.
 6. Tuples: let possibleResults: [number, number] ---> Will store exactly 2 numbers in an array.
+7. Object types: (const obj: {...def} = {...value}) will store the definition of object.

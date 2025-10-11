@@ -1,13 +1,9 @@
-let user: {
-    name: {
-        firstName: string,
-        lastName: string
-    };
-    age: number;
-} = {
-    name: {
-        firstName: "Abhishek",
-        lastName: "Jan"
-    },
-    age: 24
-}
+let data: Record<string, string|number>;
+
+data = {
+    key1: "1",
+    key2: 3,
+    3: "true"
+};
+
+console.log(data);
