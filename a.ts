@@ -1,5 +1,7 @@
-let role: "admin" | "guest";
+let arr: [1 | -1, 1 | -1];
 
-role = "admin";
+// arr can have 2 entries with values 1 or -1.
 
-console.log(role);
+arr = [1,1]; 
+
+console.log(arr);
