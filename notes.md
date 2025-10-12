@@ -6,3 +6,4 @@ What is TS + Why ?
 5. Array as generic type: Array<number|string>.
 6. Tuples: let possibleResults: [number, number] ---> Will store exactly 2 numbers in an array.
 7. Object types: (const obj: {...def} = {...value}) will store the definition of object.
+8. type aliases / custom types : useful for storing fixed values in a type definition.

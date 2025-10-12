@@ -1,7 +1,21 @@
-let arr: [1 | -1, 1 | -1];
+// Custom Role type
+type Role = "admin" | "reader";
 
-// arr can have 2 entries with values 1 or -1.
+// Union type
+type NumberOrString = number | string;
 
-arr = [1,1]; 
+// Custom User type
+type User = {
+    name: string;
+    age: NumberOrString;
+    role: Role,
+    permissions: string[]
+};
 
-console.log(arr);
+const user: User = {
+    name: "Abhishek",
+    age: '23',
+    role: "admin",
+    permissions: ["read", "write"]
+};
+
