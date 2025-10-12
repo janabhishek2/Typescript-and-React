@@ -1,21 +1,7 @@
-// Custom Role type
-type Role = "admin" | "reader";
+const func = (a: number, b: number) : number => {
+    return a + b;
+}
 
-// Union type
-type NumberOrString = number | string;
-
-// Custom User type
-type User = {
-    name: string;
-    age: NumberOrString;
-    role: Role,
-    permissions: string[]
+const log = (message: string): void => {
+    console.log(message);
 };
-
-const user: User = {
-    name: "Abhishek",
-    age: '23',
-    role: "admin",
-    permissions: ["read", "write"]
-};
-
