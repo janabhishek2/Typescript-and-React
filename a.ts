@@ -1,9 +1,5 @@
-let data: Record<string, string|number>;
+let role: "admin" | "guest";
 
-data = {
-    key1: "1",
-    key2: 3,
-    3: "true"
-};
+role = "admin";
 
-console.log(data);
+console.log(role);
