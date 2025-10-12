@@ -1,6 +1,13 @@
-var func = function (a, b) {
-    return a + b;
-};
-var log = function (message) {
-    console.log(message);
+function log(msg) {
+    console.log(msg);
+}
+function performJob(cb) {
+    cb("Job executed !!");
+}
+;
+var user = {
+    name: "Abhishek",
+    age: 24,
+    greet: function (a) { },
+    randomFunc: function () { }
 };
