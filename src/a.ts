@@ -1,4 +1,5 @@
 // Tuple types
+
 const tuples: [number, number] = [1, 1];
 
 // Not null type
@@ -8,3 +9,5 @@ const val: {} = false;
 const record: Record<string,number> = {
     a: 1,
 };
+
+record.b = 3;
