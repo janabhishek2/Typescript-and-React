@@ -1,4 +1,4 @@
-export const firstNameEl = document.getElementById("firstName") as (HTMLInputElement | null);
+const firstNameEl = document.getElementById("firstName") as (HTMLInputElement | null);
 
 // By using as and the new type inference, we make sure to override the inferred type from TS.
 
