@@ -1,8 +1,10 @@
-const inputEl = document.getElementById("input-element");
+// Tuple types
+const tuples: [number, number] = [1, 1];
 
-// type narrowing
-if(!inputEl) {
-    throw new Error("input element not found !!");
-}
+// Not null type
+const val: {} = false;
 
-inputEl.value = 1234;
+// Record generic type: to represent dynamic object using its key and value types.
+const record: Record<string,number> = {
+    a: 1,
+};

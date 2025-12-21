@@ -1,3 +1,2 @@
-var a;
-a = undefined;
-a = "123";
+var values = [1, -1];
+console.log(values);
