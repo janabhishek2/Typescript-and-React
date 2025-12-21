@@ -1,7 +1,10 @@
-export const firstNameEl = document.getElementById("firstName");
+export const firstNameEl = document.getElementById("firstName")!;
 
-if(!firstNameEl) {
-    throw new Error("Could not find element");
-}
+// By placing ! after getElementById, we stop the null check from TS and can access it without the 
+// mandatory null check
+
+// if(!firstNameEl) {
+//     throw new Error("Could not find element");
+// }
 
 console.log(firstNameEl.value);
