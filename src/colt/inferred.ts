@@ -15,3 +15,10 @@ function alertUser(msg: string): void {
     console.log(msg);
 }
 
+const alert = (msg: string): void => {
+    console.log(msg);
+}
+
+function makeError(msg: string): never {
+    throw new Error("error message");
+}
