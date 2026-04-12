@@ -3,7 +3,8 @@ type Song = {
     streams: number,
     writer: {
         primary: string,
-        secondary: string
+        secondary?: string
+        // making secondary artish optional
     }
 };
 
@@ -12,6 +13,5 @@ const song: Song = {
     streams: 1000,
     writer: {
         primary: "Subhash",
-        secondary: "bose"
     }
 };
