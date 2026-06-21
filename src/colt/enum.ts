@@ -1,8 +1,8 @@
 enum ORDER_STATUS {
-    PENDING,
-    SHIPPED,
-    DELIVERED,
-    RETURNED
+    PENDING = "pending",
+    SHIPPED = "hello",
+    DELIVERED = "delivered",
+    RETURNED = "returned"
 }
 
 const isPending = ORDER_STATUS.PENDING;
