@@ -1,4 +1,5 @@
-enum ORDER_STATUS {
+const enum ORDER_STATUS {
+    // Adding const before enum does not add ORDER_STATUS object to compiled build js
     PENDING = "pending",
     SHIPPED = "hello",
     DELIVERED = "delivered",
