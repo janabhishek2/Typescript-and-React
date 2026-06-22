@@ -5,7 +5,11 @@
   "main": "index.js",
   "author": "Abhishek Jan <abhishek.jan@brevo.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "lite-server"
+  },
   "devDependencies": {
-    "@types/node": "^25.0.3"
+    "@types/node": "^25.0.3",
+    "lite-server": "^2.6.1"
   }
 }
