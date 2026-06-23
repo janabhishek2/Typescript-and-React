@@ -1,11 +1,16 @@
-const btn = document.getElementById("btn")! as HTMLButtonElement;
-const todoInput = document.getElementById("todoInput");
+const todoInput = document.getElementById("todoInput")! as HTMLInputElement;
 
-function handleClick() {
-    const inputVal = (<HTMLInputElement>todoInput).value;
-    console.log(inputVal);
-    (<HTMLInputElement>todoInput).value = "";
+const formEl = document.querySelector("form")!;
+
+const handleSubmit = (e: SubmitEvent) => {
+    e.preventDefault();
+    const value = todoInput.value;
+    console.log(value);
+
+    // Clear input
+    todoInput.value = "";
 }
 
-btn.addEventListener("click", handleClick);
+formEl.addEventListener("submit", handleSubmit);
+
 
