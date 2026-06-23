@@ -7,7 +7,33 @@ interface Todo {
     checked: boolean
 };
 
-const todos: Todo[] = [];
+let todos: Todo[] = [];
+
+const fetchTodos = () => {
+    let lsTodos = localStorage.getItem("todos");
+    if(lsTodos) {
+        todos = JSON.parse(lsTodos)!;
+        todos.forEach((todo) => {
+            todoList.append(createTodo(todo));
+        })
+    }
+}
+
+fetchTodos();
+
+const handleCheckBoxCheck = (e: Event, todo: Todo) => {
+    if(todo.text) {
+        // Update checked state of item
+        let item = todos.find((item) => item.text === todo.text);
+        if(item) {
+            item.checked = todo.checked;
+        }
+
+        console.log(todos, item);
+        // Update LS
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }
+}
 
 const handleSubmit = (e: SubmitEvent) => {
     e.preventDefault();
@@ -28,6 +54,9 @@ const handleSubmit = (e: SubmitEvent) => {
     // Add to list 
     todoList.appendChild(li);
 
+    // Set localstorage
+    localStorage.setItem("todos", JSON.stringify(todos));
+
     // reset input
     todoInput.value = "";
 }
@@ -47,6 +76,11 @@ function createTodo(todo: Todo): HTMLLIElement {
     const checkbox: HTMLInputElement = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = checked;
+
+    checkbox.addEventListener("change", (e: Event) => {
+        todo.checked = checkbox.checked;
+        handleCheckBoxCheck(e, todo);
+    })
     
     // append checkbox to li
     li.append(checkbox);
