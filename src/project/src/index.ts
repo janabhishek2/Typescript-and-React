@@ -2,9 +2,9 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
 const todoInput = document.getElementById("todoInput");
 
 function handleClick() {
-    const inputVal = (<HTMLButtonElement>todoInput).value;
+    const inputVal = (<HTMLInputElement>todoInput).value;
     console.log(inputVal);
-    (<HTMLButtonElement>todoInput).value = "";
+    (<HTMLInputElement>todoInput).value = "";
 }
 
 btn.addEventListener("click", handleClick);
