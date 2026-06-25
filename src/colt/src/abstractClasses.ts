@@ -1,5 +1,5 @@
 abstract class Employee {
-    constructor(first: string, last: string) {};
+    constructor(public first: string, public last: string) {};
 
     abstract getPay(): number;
 
@@ -34,7 +34,8 @@ class PartTimeEmployee extends Employee {
 const e1 = new FullTimeEmployee("Abhishek", "Jan", 2000);
 
 
-const e2 = new PartTimeEmployee("Abhishek", "Jan", 10, 20);
+const e2 = new PartTimeEmployee("Ramesh", "Jan", 10, 20);
 const ans3 = e2.getPay();
 
-console.log(ans3, e1.getPay());
+e1.greet();
+e2.greet()
