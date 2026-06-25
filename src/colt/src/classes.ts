@@ -1,10 +1,10 @@
 class Person {
-    public readonly first: string;
-    public readonly last: string;
-    constructor(first: string, last: string) {
-        this.first = first;
-        this.last = last;
+
+    private getFullName() {
+        console.log("Full Name");
     }
+    // Parameter properties
+    constructor(public first: string, public last: string, public score: number = 0) {}
 }
 
 const person = new Person("Colt", "Steele");
