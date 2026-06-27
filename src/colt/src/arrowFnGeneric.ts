@@ -39,6 +39,26 @@ interface Rectangle {
     breadth: number
 }
 
-function getDoubleLength<R extends Rectangle>(rectangle: R): number {
-    return rectangle.length * 2;
+interface ContainsLength {
+    length: number
 }
+
+function getDoubleLength<T extends ContainsLength>(item: T): number {
+    return item.length * 2;
+}
+
+interface Rectangle {
+    length: number,
+    breadth: number,
+}
+
+const rectangle = {
+    length: 3,
+    breadth: 4,
+}
+
+const square = {
+    length : 3
+}
+
+let doubleLen = getDoubleLength(rectangle);
