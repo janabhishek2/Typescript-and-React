@@ -13,6 +13,7 @@
     "lite-server": "^2.6.1"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.24",
     "axios": "^1.18.1",
     "lodash": "^4.18.1"
   }
