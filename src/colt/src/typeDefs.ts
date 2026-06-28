@@ -1,6 +1,7 @@
 import axios from "axios";
 import lodash from 'lodash';
 
+console.log(lodash.add(1, 2));
 interface Todo {
     userId: number,
     id: number,
