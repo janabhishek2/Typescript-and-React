@@ -1,6 +1,8 @@
 interface Ramesh {
     name: string,
     age: number,
+    // _type: discrminated union: means a property which serves as 
+    // a distinguisher between multiple interfaces.
     _type: "ramesh"
 }
 
