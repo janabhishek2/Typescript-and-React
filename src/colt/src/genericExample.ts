@@ -1,4 +1,4 @@
-function getRandomNumber<T>(arr: T[]) :T {
+function getRandomNumber<T>(arr: T[]) :T | undefined {
     const randomNumber = Math.floor(Math.random() * 100);
     const randIndex = randomNumber % (arr.length);
 
