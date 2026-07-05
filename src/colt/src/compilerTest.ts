@@ -2,6 +2,6 @@ const fn = () => {
     console.log("Hello world!");
 }
 
-function fn1(a) {
+export function fn1(a: any) {
     console.log(a);
 }

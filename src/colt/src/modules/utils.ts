@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 export function add(a: number, b: number): number {
-    return a + b;
+    return _.add(a, b);
 };
