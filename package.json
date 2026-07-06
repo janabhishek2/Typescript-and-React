@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/minimatch": "^6.0.0",
+    "@babel/preset-typescript": "^7.24.0",
     "@types/node": "^26.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "lite-server": "^2.6.1",
