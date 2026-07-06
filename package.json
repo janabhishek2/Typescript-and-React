@@ -7,10 +7,12 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.cjs",
-    "build": "webpack --config webpack/webpack.config.cjs"
+    "build": "webpack --config webpack/webpack.prod.cjs"
   },
   "devDependencies": {
+    "@types/minimatch": "^6.0.0",
     "@types/node": "^26.1.0",
+    "clean-webpack-plugin": "^4.0.0",
     "lite-server": "^2.6.1",
     "ts-loader": "^9.6.2",
     "ts-node": "^10.9.2",
