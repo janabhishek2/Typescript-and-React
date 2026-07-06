@@ -1,4 +1,7 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
     mode: "development",
     entry: path.resolve(__dirname, '../src/colt/src/consumer.ts'),
@@ -26,5 +29,11 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "../src/colt/dist"),
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../src/react/public/index.html')
+        }),
+        new CleanWebpackPlugin()
+    ]
 }
