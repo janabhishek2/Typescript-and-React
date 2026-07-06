@@ -1,5 +1,5 @@
-import { add } from "./utils.js";
-import User from './User.js';
+import { add } from "./utils";
+import User from './User';
 
 const user = new User("Abhishek", "abhishek@brevo.com");
 
