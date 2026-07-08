@@ -1,19 +1,23 @@
 import React from "react";
-import Greeter from "../components/Greeter.jsx";
+// import Greeter from "../components/Greeter.jsx";
+import ShoppingList from "../components/ShoppingList.tsx";
 
-const num: number =1;
-
-const func = <T,>(x: T): T => {
-  return x;
-};
-
-const ans = func(3);
-
-console.log("Hello from TS!!", num, ans);
+const items = [
+  {
+    id: 1,
+    name: "Hansaplast Band-aid",
+    quantity: 2
+  },
+  {
+    id: 2,
+    name: "Sunscreen",
+    quantity: 5,
+  }
+]
 
 function App(){
   return <div>
-    <Greeter personName="Abhishek"/>
+    <ShoppingList items={items} />
   </div>;
 }
 
