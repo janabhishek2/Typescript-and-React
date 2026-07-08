@@ -1,11 +1,5 @@
 import React from 'react'
-
-interface Item {
-    id: number,
-    name: string,
-    quantity: number
-  }
-
+import type Item from '../models/Item.js';
 interface Props {
     items: Item[]
 }
